@@ -148,8 +148,6 @@ body {
   color: white;
   font-weight: 500;
   font-size: 16px;
-  margin-top: auto;
-  margin-left: auto;
   width: fit-content;
   padding: 15px 25px;
   border-radius: 5px;
@@ -160,4 +158,9 @@ body {
   cursor: pointer;
   background-color: hsl(213, 96%, 28%);
   transition: 0.3s;
+}
+
+.next-button-link {
+  margin-top: auto;
+  margin-left: auto;
 }
