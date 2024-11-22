@@ -32,6 +32,53 @@ body {
   border-radius: 10px;
 }
 
+.steps-div {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  gap: 20px;
+}
+
+.steps {
+  display: flex;
+  font-size: 14px;
+  color: white;
+  align-items: center;
+  gap: 15px;
+}
+
+.steps-numbers {
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+.step1-number {
+  background-color: hsl(206, 94%, 87%);
+  color: hsl(213, 96%, 18%);
+  border: none;
+}
+
+.steps-title {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.steps-subtitle {
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.steps div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
 .form-area {
   flex: 1.85;
   margin: 30px 85px;
@@ -81,6 +128,14 @@ body {
 .inputs:focus {
   outline: none;
   border: 1.5px solid hsl(213, 100%, 36%);
+}
+
+.inputs::placeholder {
+  opacity: 0.65;
+}
+
+.inputs:focus::placeholder {
+  opacity: 0;
 }
 
 .input-error {
