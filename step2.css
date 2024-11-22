@@ -7,6 +7,7 @@
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-style: normal;
+  border: none;
 }
 
 body {
@@ -115,6 +116,40 @@ body {
   outline: none;
   border: 1.5px solid hsl(213, 100%, 36%);
 } */
+
+.plans-area {
+  display: flex;
+  gap: 20px;
+}
+
+.plans {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  height: 200px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-color: white;
+}
+
+.plans:hover {
+  cursor: pointer;
+}
+
+.plans:focus {
+  border: 1.5px solid hsl(213, 100%, 36%);
+  transition: 0.3s;
+  background-color: rgba(0, 83, 184, 0.05);
+}
+
+.plans div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
 
 .buttons-area {
   display: flex;
