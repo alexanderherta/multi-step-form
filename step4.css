@@ -115,13 +115,47 @@ body {
 hr {
   height: 1px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.1);
   align-self: center;
+}
+
+.total-heading {
+  font-size: 16px;
+  font-weight: 500;
+  color: hsl(213, 96%, 18%);
+}
+
+.total-change {
+  color: rgba(0, 0, 0, 0.4);
+  width: fit-content;
+}
+
+.total-change:hover {
+  color: hsl(243, 100%, 62%);
+}
+
+.total-subheading {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.total-plan-price {
+  color: hsl(213, 96%, 18%);
+  font-weight: 700;
+}
+
+.total-other-price {
+  color: hsl(213, 96%, 18%);
 }
 
 .total-plan {
   display: flex;
   justify-content: space-between;
+}
+
+.total-plan div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .total-other {
@@ -133,6 +167,18 @@ hr {
 .total-service, .total-storage {
   display: flex;
   justify-content: space-between;
+}
+
+.full-total-area {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 25px;
+}
+
+.full-total-price {
+  color:hsl(243, 100%, 62%);
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .buttons-area {
