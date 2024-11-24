@@ -103,25 +103,48 @@ body {
 }
 
 .checkboxes-area {
-  background-color: red;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
 .checkboxes {
-  background-color: blue;
   height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.checkbox {
+  align-self: center;
+  height: 20px;
+  width: 20px;
+  border-radius: 30px;
+}
+
+.checkbox:checked {
+  accent-color: hsl(243, 100%, 62%);
+  position: relative;
+}
+
+.checkbox:checked::after {
+  content: url("./assets/images/icon-checkmark.svg");
+  background-color: hsl(243, 100%, 62%);
+  position: absolute;
+  border-radius: 5px;
+  top: 2px;
+  left: 2px;
+  height: 15px;
+  width: 15px;
+  padding: 1px;
 }
 
 .checkbox-div {
   display: flex;
   gap: 20px;
-  background-color: green;
 }
 
 .checkbox-div div {
@@ -130,8 +153,23 @@ body {
   gap: 5px;
 }
 
-/* border: 1px solid rgba(0, 0, 0, 0.25); */
+.checkbox-title {
+  color: hsl(213, 96%, 18%);
+  font-weight: 500;
+  font-size: 16px;
+}
 
+.checkbox-subtitle {
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.checkbox-price {
+  color: hsl(243, 100%, 62%);
+  font-weight: 500;
+  font-size: 14px;
+}
 
 .buttons-area {
   display: flex;
