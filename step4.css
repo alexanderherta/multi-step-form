@@ -102,7 +102,38 @@ body {
   color: rgba(0, 0, 0, 0.4);
 }
 
+.total-area {
+  background-color: rgba(0, 83, 184, 0.05);
+  height: 190px;
+  padding: 25px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+hr {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+  align-self: center;
+}
+
+.total-plan {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-other {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.total-service, .total-storage {
+  display: flex;
+  justify-content: space-between;
+}
 
 .buttons-area {
   display: flex;
