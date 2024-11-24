@@ -102,6 +102,37 @@ body {
   color: rgba(0, 0, 0, 0.4);
 }
 
+.checkboxes-area {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.checkboxes {
+  background-color: blue;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.checkbox-div {
+  display: flex;
+  gap: 20px;
+  background-color: green;
+}
+
+.checkbox-div div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* border: 1px solid rgba(0, 0, 0, 0.25); */
+
+
 .buttons-area {
   display: flex;
   align-items: center;
