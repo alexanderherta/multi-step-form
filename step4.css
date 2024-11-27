@@ -143,6 +143,10 @@ hr {
   font-weight: 700;
 }
 
+.total-plan-price-number, .full-total-price-number {
+  font-weight: 700;
+}
+
 .total-other-price {
   color: hsl(213, 96%, 18%);
 }

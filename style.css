@@ -140,6 +140,7 @@ body {
 
 .input-error {
   color: red;
+  font-weight: 500;
   visibility: hidden;
 }
 
