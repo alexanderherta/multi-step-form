@@ -118,6 +118,13 @@ body {
   border-radius: 8px;
 }
 
+.checkboxes:hover {
+  cursor: pointer;
+  border: 1.5px solid hsl(213, 100%, 36%);
+  transition: 0.3s;
+  background-color: rgba(0, 83, 184, 0.05);
+}
+
 .checkbox {
   align-self: center;
   height: 20px;

@@ -114,7 +114,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding: 15px;
-  height: 175px;
+  height: 150px;
   border: 1px solid rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   background-color: white;
@@ -126,11 +126,11 @@ body {
   border: 1.5px solid rgba(0, 0, 0, 0.6);
 }
 
-.plans:focus {
+/* .plans:focus {
   border: 1.5px solid hsl(213, 100%, 36%);
   transition: 0.3s;
   background-color: rgba(0, 83, 184, 0.05);
-}
+} */
 
 .plans div {
   display: flex;
