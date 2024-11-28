@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
     <link rel="stylesheet" href="./step2.css">
+    <script src="step2.js" defer></script>
     <title>Frontend Mentor | Multi-step form</title>
   </head>
   <body>
@@ -52,7 +53,7 @@
         </div>
 
         <div class="plans-area">
-          <button class="plans">
+          <button class="plans arcade-plan" onclick="isArcadePlan()">
             <img src="./assets/images/icon-arcade.svg" alt="Arcade Icon">
             <div>
               <p class="plan-title">Arcade</p>
@@ -61,7 +62,7 @@
             </div>
           </button>
 
-          <button class="plans">
+          <button class="plans advanced-plan" onclick="isAdvancedPlan()">
             <img src="./assets/images/icon-advanced.svg" alt="Advanced Icon">
             <div>
               <p class="plan-title">Advanced</p>
@@ -70,7 +71,7 @@
             </div>
           </button>
 
-          <button class="plans">
+          <button class="plans pro-plan" onclick="isProPlan()">
             <img src="./assets/images/icon-pro.svg" alt="Pro Icon">
             <div>
               <p class="plan-title">Pro</p>
@@ -88,7 +89,7 @@
 
         <div class="buttons-area">
           <a class="back-button-link" href="./index.html">Go Back</a>
-          <a class="next-button-link" href="./step3.html"><button class="next-button">Next Step</button></a>
+          <a class="next-button-link" href="#"><button class="next-button">Next Step</button></a>
         </div>
       </div>
     </div> 
