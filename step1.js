@@ -7,7 +7,7 @@ const phoneInputError = document.querySelector(".phone-input-error");
 const nextButtonLink = document.querySelector(".next-button-link");
 let nameInput, emailInput, phoneInput;
 
-window.onload = function() {
+window.onload = function getPriorUserChoices() {
   nameInputBox.value = sessionStorage.getItem("nameVar");
   nameInput = sessionStorage.getItem("nameVar");
   emailInputBox.value = sessionStorage.getItem("emailVar");
