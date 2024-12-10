@@ -1,6 +1,11 @@
 const arcadePlanButton = document.querySelector(".arcade-plan");
 const advancedPlanButton = document.querySelector(".advanced-plan");
 const proPlanButton = document.querySelector(".pro-plan");
+const plans = document.querySelectorAll(".plans");
+const plansDiv = document.querySelectorAll(".plans-div");
+const addPlanZero1 = document.querySelector(".add-plan-zero1");
+const addPlanZero2 = document.querySelector(".add-plan-zero2");
+const addPlanZero3 = document.querySelector(".add-plan-zero3");
 const monthlyYearlySwitch = document.querySelector(".monthly-yearly-switch");
 const monthlyText = document.querySelector(".monthly-text");
 const yearlyText = document.querySelector(".yearly-text");
@@ -116,6 +121,19 @@ function toggleMonthlyYearly() {
     monthlyText.style.transition = "0.3s";
     yearlyText.style.color = "hsl(213, 96%, 18%)";
     yearlyText.style.transition = "0.3s";
+    plans.forEach((plan) => {
+      plan.style.height = "175px";
+      plan.style.transition = "0.3s";
+    });
+    plansDiv.forEach((planDiv) => {
+      planDiv.innerHTML += `<p class="plan-free-length">2 months free</p>`;
+      planDiv.style.transition = "0.3s";
+    });
+    // addPlanZeros.forEach((addPlanZero) => {
+    //   addPlanZero.textContent = "0";
+    //   console.log(addPlanZero);
+    //   console.log(addPlanZeros);
+    // });
   } else {
     sessionStorage.setItem("isMonthly", "true");
     sessionStorage.setItem("isYearly", "false");
@@ -123,5 +141,13 @@ function toggleMonthlyYearly() {
     monthlyText.style.transition = "0.3s";
     yearlyText.style.color = "rgba(0, 0, 0, 0.4)";
     yearlyText.style.transition = "0.3s";
+    plans.forEach((plan) => {
+      plan.style.height = "150px";
+      plan.style.transition = "0.3s";
+    });
+    plansDiv.forEach((planDiv) => {
+      planDiv.removeChild(planDiv.lastChild);
+      planDiv.style.transition = "0.3s";
+    });
   }
 }
