@@ -132,6 +132,10 @@ body {
   border-radius: 30px;
 }
 
+.checkbox:hover {
+  cursor: pointer;
+}
+
 .checkbox:checked {
   accent-color: hsl(243, 100%, 62%);
   position: relative;
