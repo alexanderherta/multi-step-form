@@ -56,11 +56,28 @@ window.onload = function getPriorUserChoices() {
     yearlyText.style.color = "hsl(213, 96%, 18%)";
     yearlyText.style.transition = "0.3s";
     monthlyYearlySwitch.checked = true;
-  } else if(sessionStorage.getItem("isMonthly") === true) {
+    plans.forEach((plan) => {
+      plan.style.height = "175px";
+      plan.style.transition = "0.3s";
+    });
+    plansDiv.forEach((planDiv) => {
+      planDiv.innerHTML += `<p class="plan-free-length">2 months free</p>`;
+      planDiv.style.transition = "0.3s";
+    });
+  } else if(sessionStorage.getItem("isMonthly") === "true") {
     monthlyText.style.color = "hsl(213, 96%, 18%)";
     monthlyText.style.transition = "0.3s";
     yearlyText.style.color = "rgba(0, 0, 0, 0.4)";
     yearlyText.style.transition = "0.3s";
+    monthlyYearlySwitch.checked = false;
+    plans.forEach((plan) => {
+      plan.style.height = "150px";
+      plan.style.transition = "0.3s";
+    });
+    plansDiv.forEach((planDiv) => {
+      planDiv.removeChild(planDiv.lastChild);
+      planDiv.style.transition = "0.3s";
+    });
   }
 }
 

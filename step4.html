@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
     <link rel="stylesheet" href="./step4.css">
+    <script src="./step4.js" defer></script>
     <title>Frontend Mentor | Multi-step form</title>
   </head>
   <body>
@@ -55,10 +56,10 @@
 
           <div class="total-plan">
             <div>
-              <p class="total-heading">Arcade (Monthly)</p>
+              <p class="total-heading"><span class="total-heading-plan"></span> <span class="total-heading-monthly-yearly"></span></p>
               <a class="total-change" href="#">Change</a>
             </div>
-            <p class="total-plan-price">$<span class="total-plan-price-number">9</span>/mo</p>
+            <p class="total-plan-price">$9<span class="first-zero total-price-numbers-zero"></span>/mo</p>
           </div>
 
           <hr>
@@ -66,15 +67,15 @@
           <div class="total-other">
             <div class="total-service">
               <p class="total-subheading">Online service</p>
-              <p class="total-other-price">+$<span class="total-service-price-number">1</span>/mo</p>
+              <p class="total-other-price">+$1<span class="total-price-numbers-zero"></span>/mo</p>
             </div>
             <div class="total-storage">
               <p class="total-subheading">Larger storage</p>
-              <p class="total-other-price">+$<span class="total-storage-price-number">2</span>/mo</p>
+              <p class="total-other-price">+$2<span class="total-price-numbers-zero"></span>/mo</p>
             </div>
             <div class="total-profile">
               <p class="total-subheading">Customizable profile</p>
-              <p class="total-other-price">+$<span class="total-profile-price-number">2</span>/mo</p>
+              <p class="total-other-price">+$2<span class="total-price-numbers-zero"></span>/mo</p>
             </div>
           </div>
 
@@ -82,7 +83,7 @@
 
         <div class="full-total-area">
           <p class="total-subheading">Total (per month)</p>
-          <p class="full-total-price">+<span class="full-total-price-number">14</span>/mo</p>
+          <p class="full-total-price">+14<span class="final-zero full-total-price-number-zero"></span>/mo</p>
         </div>
 
         <div class="buttons-area">

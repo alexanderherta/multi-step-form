@@ -125,6 +125,14 @@ hr {
   color: hsl(213, 96%, 18%);
 }
 
+.total-heading-monthly-yearly, .total-heading-plan {
+  font-weight: 500;
+}
+
+.first-zero, .final-zero {
+  font-weight: 800;
+}
+
 .total-change {
   color: rgba(0, 0, 0, 0.4);
   width: fit-content;
